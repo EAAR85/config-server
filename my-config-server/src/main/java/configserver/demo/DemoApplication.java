@@ -12,4 +12,7 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 
+    //EJEMPLO BASE:
+    //https://www.youtube.com/watch?v=ydtswONk9TE&list=PLxy6jHplP3Hi_W8iuYSbAeeMfaTZt49PW&index=13
+    //https://www.youtube.com/watch?v=ydtswONk9TE&list=PLxy6jHplP3Hi_W8iuYSbAeeMfaTZt49PW&index=13
 }
