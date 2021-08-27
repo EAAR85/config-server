@@ -4,6 +4,8 @@ server:
 #spring.cloud.config.server.git.skip-ssl-validation=true
 
 spring:
+  profiles:
+    active: composite
   cloud:
     config:
       #name: configserver
