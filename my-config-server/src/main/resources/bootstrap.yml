@@ -1,3 +1,20 @@
+server:
+  port: 8081
+
+#spring.cloud.config.server.git.skip-ssl-validation=true
+
 spring:
-  application:
-#    name: config-server
+  cloud:
+    config:
+      #name: configserver
+      server:
+        git:
+          uri: https://github.com/EAAR85/Java-Config-Server.git
+          search-paths: config-data
+          user: EAAR85
+          password: <123QWE123qwe>
+          default-label: master
+  security:
+    user:
+      name: root
+      password: s3cr3t
