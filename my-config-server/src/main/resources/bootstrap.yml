@@ -4,16 +4,16 @@ server:
 spring:
   cloud:
     config:
-      name: configserver
+      #name: configserver
       server:
         git:
           uri: https://github.com/EAAR85/Java-Config-Server.git
+          skip-ssl-validation: true
           #search-paths: config-data
           searchPath: config-data
-          user: EAAR85
+          username: EAAR85
           password: <123QWE123qwe>
           default-label: master
-          #skip-ssl-validation: true
   security:
     user:
       name: root
