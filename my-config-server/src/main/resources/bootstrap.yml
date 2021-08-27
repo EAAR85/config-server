@@ -13,7 +13,7 @@ spring:
           search-paths: config-data
           user: EAAR85
           password: <123QWE123qwe>
-          #default-label: master
+          default-label: master
   security:
     user:
       name: root
