@@ -50,7 +50,7 @@
 
 		-->
 
-
+<!-- ini para que funcione el controller -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -73,7 +73,7 @@
 			<optional>true</optional>
 		</dependency>
 
-
+		<!-- end para que funcione el controller -->
 
 	</dependencies>
 	<dependencyManagement>
