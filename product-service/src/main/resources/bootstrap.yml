@@ -10,3 +10,10 @@ spring:
       uri: http://localhost:8081
       username: root
       password: s3cr3t
+
+properties:
+  list:
+    - value 1
+    - value 2
+    - value 3
+  type: type1
