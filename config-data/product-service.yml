@@ -2,3 +2,10 @@ spring:
   data:
     mongodb:
       uri: mongodb+srv://anunnaki:123qwe123@cluster0-dx1j1.mongodb.net/aegisdb?retryWrites=true&w=majority
+
+properties:
+  list:
+    - value 1
+    - value 2
+    - value 3
+  type: type1
