@@ -2,10 +2,13 @@ package com.example.demo.rest;
 
 import com.example.demo.model.ErrorCatalog;
 import com.example.demo.model.Params;
+import com.example.demo.model.Product;
+import com.example.demo.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.Flux;
 
 import java.util.List;
 import java.util.Map;
@@ -16,6 +19,9 @@ public class ProductController {
 
     @Autowired
     Params params;
+
+    @Autowired
+    ProductRepository productRepository;
 
     @GetMapping("/welcome")
     public String mensaje() {
@@ -47,5 +53,12 @@ public class ProductController {
     @GetMapping("/getTemplates")
     public Map<String, String> getTemplates() {
         return params.getTemplates();
+    }
+
+    @GetMapping("/getProductList")
+    public Flux<Product> getProductList() {
+        Flux<Product> productList = productRepository.findAll().doOnNext(x -> System.out.println(x.getNombre()));
+
+        return productList;
     }
 }

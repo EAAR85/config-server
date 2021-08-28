@@ -50,7 +50,7 @@
 
         -->
 
-        <!-- ini para que funcione el controller -->
+        <!-- INI PARA QUE FUNCIONE EL CONTROLLER-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -73,10 +73,10 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- end -->
+        <!-- END -->
 
 
-        <!-- ini
+        <!-- INI  CONFIGURAR PROPERTIES
         Si sale este error:
             Spring boot configuration annotation processor not configured
 
@@ -95,6 +95,15 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
+        <!-- END -->
+
+        <!-- ini mongodb -->
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb-reactive</artifactId>
+        </dependency>
+
         <!-- end -->
 
     </dependencies>

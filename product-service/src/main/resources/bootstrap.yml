@@ -3,6 +3,7 @@ server:
 
 spring:
   application:
+    #debe tener el mismo nombre que se especifico en el config-service:   config-data/product-service.yml
     name: product-service
   cloud:
     config:
@@ -10,6 +11,7 @@ spring:
       uri: http://localhost:8081
       username: root
       password: s3cr3t
+
 
 properties:
   list:
