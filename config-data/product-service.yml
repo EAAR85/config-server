@@ -1,2 +1,4 @@
-server.port=9003
-spring.data.mongodb.uri=mongodb+srv://anunnaki:123qwe123@cluster0-dx1j1.mongodb.net/aegisdb?retryWrites=true&w=majority
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://anunnaki:123qwe123@cluster0-dx1j1.mongodb.net/aegisdb?retryWrites=true&w=majority
