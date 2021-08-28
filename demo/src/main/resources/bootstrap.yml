@@ -1,0 +1,19 @@
+
+server:
+  port: 8081
+
+spring:
+  cloud:
+    config:
+      profile: native
+      server:
+        git:
+          uri: https://github.com/EAAR85/config-server.git
+          searchPaths: config-data
+          #username: {GIT_USER}
+          #password: {GIT_PASSWORD}
+          #default-label: master
+  security:
+    user:
+      name: root
+      password: s3cr3t
