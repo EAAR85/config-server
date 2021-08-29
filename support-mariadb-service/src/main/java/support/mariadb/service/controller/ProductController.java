@@ -35,3 +35,7 @@ public class ProductController {
         return result;
     }
 }
+
+// https://www.javaguides.net/2020/01/spring-boot-mariadb-crud-example-tutorial.html
+
+
