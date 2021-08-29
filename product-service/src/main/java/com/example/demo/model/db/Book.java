@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.example.demo.model.db;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @Setter
 @Getter
 @Document(collection = "libro")
-public class Product {
+public class Book {
 
     @Id
     private String id;
@@ -17,10 +17,10 @@ public class Product {
     @Field("nombre")
     private String nombre;
 
-    public Product() {
+    public Book() {
     }
 
-    public Product(String nombre) {
+    public Book(String nombre) {
         this.nombre = nombre;
     }
 }
