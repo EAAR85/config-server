@@ -1,6 +1,6 @@
 package com.example.demo.repository;
 
-import com.example.demo.model.db.Book;
+import com.example.demo.model.entity.Book;
 
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;

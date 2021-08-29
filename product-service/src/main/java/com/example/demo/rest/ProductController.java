@@ -2,8 +2,8 @@ package com.example.demo.rest;
 
 import com.example.demo.model.ErrorCatalog;
 import com.example.demo.model.Params;
-import com.example.demo.model.db.Book;
-import com.example.demo.model.db.Product;
+import com.example.demo.model.entity.Book;
+import com.example.demo.model.entity.Product;
 import com.example.demo.repository.BookRepository;
 import com.example.demo.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
