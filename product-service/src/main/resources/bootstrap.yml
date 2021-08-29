@@ -5,6 +5,7 @@ spring:
   application:
     #debe tener el mismo nombre que se especifico en el config-service:   config-data/product-service.yml
     name: product-service
+  banner: classpath:/banner.txt
   cloud:
     config:
       enabled: true
@@ -12,6 +13,10 @@ spring:
       username: root
       password: s3cr3t
 
+info:
+  project:
+    version: 1.0.0
+    title: Product Service
 
 properties:
   list:
