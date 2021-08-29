@@ -3,6 +3,8 @@ package com.example.demo.rest;
 import com.example.demo.model.ErrorCatalog;
 import com.example.demo.model.Params;
 import com.example.demo.model.db.Book;
+import com.example.demo.model.db.Product;
+import com.example.demo.repository.BookRepository;
 import com.example.demo.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +21,9 @@ public class ProductController {
 
     @Autowired
     Params params;
+
+    @Autowired
+    BookRepository bookRepository;
 
     @Autowired
     ProductRepository productRepository;
@@ -57,8 +62,16 @@ public class ProductController {
 
     @GetMapping("/getBookList")
     public Flux<Book> getBookList() {
-        Flux<Book> productList = productRepository.findAll().doOnNext(x -> System.out.println(x.getNombre()));
+        Flux<Book> bookList = bookRepository.findAll().doOnNext(x -> System.out.println(x.getNombre()));
+
+        return bookList;
+    }
+
+    @GetMapping("/getProductList")
+    public Flux<Product> getProductList() {
+        Flux<Product> productList = productRepository.findAll().doOnNext(x -> System.out.println(x.getCodigo()));
 
         return productList;
     }
+
 }
