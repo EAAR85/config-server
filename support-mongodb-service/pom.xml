@@ -27,13 +27,10 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bootstrap</artifactId>
-        </dependency>
 
-        <!--
-        error: Add a spring.config.import=configserver: property to your configuration.
+        <!-- INI
+        error: Este Error sale cuando se usa el bootstrap.yml:
+        error message: If you are using the git profile, you need to set a Git URI in your configuration.  If you have set spring.cloud.config.server.bootstrap=true, you need to use a composite configuration.
 
         solucion:
         1)
@@ -49,17 +46,18 @@
               enabled: true
 
         -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
+        <!-- END -->
 
         <!-- INI PARA QUE FUNCIONE EL CONTROLLER-->
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
+        <!-- END -->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -73,7 +71,7 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- END -->
+
 
 
         <!-- INI  CONFIGURAR PROPERTIES

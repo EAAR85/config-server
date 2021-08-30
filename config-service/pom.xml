@@ -22,10 +22,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
+
+		<!-- INIT CONFIG SERVER-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
+		<!-- END -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -38,7 +41,7 @@
 			<scope>test</scope>
 		</dependency>
 
-<!--
+<!-- INI
 
 este Error sale cuando se usa el bootstrap.yml:
 		If you are using the git profile, you need to set a Git URI in your configuration.  If you have set spring.cloud.config.server.bootstrap=true, you need to use a composite configuration.
@@ -55,6 +58,8 @@ solucion:
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-bootstrap</artifactId>
 		</dependency>
+
+		<!-- END -->
 
 	</dependencies>
 	<dependencyManagement>
