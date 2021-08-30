@@ -3,6 +3,9 @@ server:
   port: 8081
 
 spring:
+  application:
+    name: config-service
+  banner: classpath:/banner.txt
   cloud:
     config:
       profile: native
@@ -17,3 +20,8 @@ spring:
     user:
       name: root
       password: s3cr3t
+
+info:
+  project:
+    version: 1.0.0
+    title: Config Service

@@ -6,6 +6,7 @@
         `88888P' `88888P8 `88888P8 dP
 
 
+:: Banner font (nancyj): https://devops.datenkollektiv.de/banner.txt/index.html
 :: Running Spring Boot ${spring-boot.version} ::
 :: Micro-Service ${spring.application.name} version ${info.project.version} ::
 
